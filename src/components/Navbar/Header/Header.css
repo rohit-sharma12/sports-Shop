@@ -1,0 +1,27 @@
+.header img {
+    height: 20vw;
+    width: 100%;
+    /* margin: 5px 10px; */
+    background-size: contain;
+    position: relative;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.banner2 img {
+    height: 20vw;
+    width: 100%;
+    margin: 5px 10px;
+    background-size: contain;
+    position: relative;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media(max-width:1050px) {
+    .header {
+        height: 25vw;
+    }
+}
