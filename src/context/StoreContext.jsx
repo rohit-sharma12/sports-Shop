@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
+import { sport_list } from "../components/FoodDisplay/sportList";
 
 export const StoreContext = createContext(null)
-import FoodDisplay from "../components/FoodDisplay/FoodDisplay";
 
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
@@ -24,7 +24,7 @@ const StoreContextProvider = (props) => {
     }, [cartItems])
 
     const contextValue = {
-        FoodDisplay,
+        sport_list,
         cartItems,
         setCartItems,
         addToCart,

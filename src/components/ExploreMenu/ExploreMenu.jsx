@@ -1,7 +1,7 @@
 import React from 'react'
 import './ExploreMenu.css'
 
-const sport_list = [
+const sport_menu = [
     {
         sport_name: 'Gym',
         sport_img: "https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/dumbells.jpg",
@@ -59,7 +59,7 @@ const ExploreMenu = ({ category, setCategory }) => {
             <p className='explore-menu-text'>
                 Explore the wide selection of professional sports equipment across exercise and fitness, hiking and many more. Buy sports, fitness and outdoor equipment at the professional sports store online at India.</p>
             <div className="explore-menu-list">
-                {sport_list.map((item, index) => {
+                {sport_menu.map((item, index) => {
                     return (
                         <div onClick={() => setCategory(prev => prev === item.sport_name ? "All" : item.sport_name)} key={index} className='explore-menu-list-item'>
                             <img className={category === item.sport_name ? 'active' : ""} src={item.sport_img} alt="" />
